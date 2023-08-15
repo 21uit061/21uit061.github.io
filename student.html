@@ -1,0 +1,125 @@
+<html>
+    <head>
+<style>
+body{
+    background-color: #333;
+  
+    font-family: 'Roboto',sans-serif;
+    margin-top: 70px;
+ }
+.container{
+   margin-top: 20px;
+    width:100vw;
+    height: 900px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+ }
+ 
+.card{
+    background-color: lightblue;
+    height: 200px;
+    width: 300px;
+    padding: 500px;
+    margin-left: 1px;
+    margin-bottom:700px;
+   
+   }
+.card h2{
+    margin-bottom: 30px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.form-group label{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    color:black;
+}
+
+.form-group input{
+    background-color: white;
+    height: 30px;
+    width: 400px;
+    border:none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.more{
+    text-decoration: dotted;
+    margin-top: 10px;
+    margin-left: 150px;
+
+    
+}
+
+button{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #4286F5;
+    color: white;
+    font-size: 15px;
+    font-weight:300;
+   cursor: pointer;
+}
+.more a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+#img{
+    margin-left: 0.2px;
+}
+
+
+</style>
+<script>
+            function check()
+            {
+                var a=document.getElementById("un").value;
+                var b=document.getElementById("pass").value;
+                if(a==b)
+                    {
+                       location.replace("E:\website\frame.html");
+                    }
+                else
+                    {
+                        alert("Not Same In User Name and Password");
+                    }
+                    
+            }
+
+        </script>
+        <link rel="stylesheet" href="style.css">
+         <title>reservation</title>
+        </head>
+        <body >
+     
+         <form bgcolor="red" >
+            <div class="container">
+                      <div class="card">
+<div id="img">
+		<img src="E:\website\download.jpg" width="35%" height="35%"/></div>
+                      <h2><MARQUEE direction="left">  Student Registration</MARQUEE></h2>
+                           <div class="form-group">
+                               <label for="name">Student Name:</label>
+                             <input type="text" id="un" name="un">
+	                <label for="name">Roll Number:</label>
+                             <input type="text" id="rn" name="rn"><br>
+                             <label for="num">Mobile Number:</label>
+                             <input type="text" id="mn" name="mn"/><br>
+                             <label for="Dept">Department</label>
+<input type="text" id="dp"/> 
+	        <button onclick="check()">Submit</button>
+                        <button>Cancel</button>
+      </div></div>
+               </div>
+           </form></body><html>
+                          
